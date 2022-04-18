@@ -253,12 +253,12 @@ footer {
     }
 
     .galeria-sexto{
-        grid-auto-rows: 100px;
+        display: block;
 
     }
 
     .galeria-pieck{
-        grid-auto-rows: 100px;
+        display: block;
     }
 
     .content{
