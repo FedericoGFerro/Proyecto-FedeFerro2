@@ -1,5 +1,3 @@
-/* sexto.html */
-
 html{
     background-image: url("../img/baas-background2.jpg");
     background-attachment: fixed;
@@ -63,7 +61,80 @@ main{
     }
 }
 
+/* index.html */
 
+.content{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-auto-rows: 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.principal1{
+    grid-column: span 2;
+    grid-row: span 2;
+    font-size: 20px;
+}
+
+.pri1img{
+    width: auto;
+    height: 500px;
+}
+
+.principal2{
+    grid-column: span 1;
+    grid-row: span 1;
+    font-size: 20px;
+}
+
+.pri2img{
+    width: auto;
+    height: 300px;
+}
+
+.principal3{
+    grid-column: span 1;
+    grid-row: span 1;
+    font-size: 20px;
+}
+
+.pri3img{
+    width: auto;
+    height: 300px;
+}
+
+.secundario{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    grid-auto-rows: 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 5px;
+}
+
+.secundario img{
+    padding-top: 5px;
+    width: 300px;
+    height: 200px;
+}
+
+h2:hover{
+    text-decoration: underline;
+    background-color: rgb(201, 201, 182);
+}
+
+/* sexto.html */
+/* pieck.html */
 
     .info{
         background-color: rgb(190, 190, 190);
@@ -86,12 +157,116 @@ main{
         }
     }
 
-footer {
-    background-color: #dbb372;
-    text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+/* gallery */
+
+.galeria-sexto{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 30px;
+
 }
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria-sexto-titulo{
+    align-self: center;
+    justify-self: center;
+    background-color: #dbb372;
+    height: 100%;
+    width: 100%;
+}
+
+.sexto3{
+    grid-row: span 2;
+
+}
+
+.sexto6{
+    grid-column: span 2;
+}
+
+.galeria-pieck{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-bottom: 30px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.galeria-pieck-titulo{
+    align-self: center;
+    justify-self: center;
+    background-color: #dbb372;
+    height: 100%;
+    width: 100%;
+}
+
+.pieck1{
+    grid-row: span 2;
+}
+
+.pieck4{
+    grid-row: span 2;
+}
+
+
+
+/* contact */
+
+.contact{
+    width: 100%;
+    display: flex;
+}
+
+.form{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(190, 190, 190);
+    width: 100%;
+    margin-right: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.contact-foto{
+    background-color: rgb(190, 190, 190);
+    width: 100%;
+    margin-left: 5px;
+}
+
+    footer {
+        background-color: #dbb372;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
 @media screen and (max-width: 768px){
     nav ul li{
@@ -106,5 +281,27 @@ footer {
                     height: auto;
                 }
         }
+    }
+
+    .galeria-sexto{
+        display: block;
+
+    }
+
+    .galeria-pieck{
+        display: block;
+    }
+
+    .content{
+        display: block;
+    }
+
+    .secundario{
+        display: block;
+    }
+
+    .contact-foto{
+        width: 300px;
+        height: auto;
     }
 }
